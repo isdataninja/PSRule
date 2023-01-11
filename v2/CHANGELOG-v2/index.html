@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://microsoft.github.io/PSRule/v2/CHANGELOG-v2/">
       
+      
+        <link rel="prev" href="../related-projects/">
+      
+      
+        <link rel="next" href="../CHANGELOG-v1/">
+      
       <link rel="icon" href="../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
     
     
       
@@ -23,16 +29,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.644de097.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6b71719e.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#000000">
-        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
       
+      
+
     
     
     
@@ -47,10 +50,11 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
 
@@ -60,10 +64,15 @@
     
   
 
+  <!-- Determine description -->
+  
+  
+
   <!-- The image needs to have an absolute URL -->
   
 
   <!-- Open graph meta tags -->
+  <meta property="og:site_name" content="PSRule" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PSRule - v2" />
   <meta property="og:description" content="Validate infrastructure as code (IaC) and objects using PowerShell rules." />
@@ -90,7 +99,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
   
     
     
@@ -110,9 +119,7 @@
     </div>
     
       <div data-md-component="outdated" hidden>
-        <aside class="md-banner md-banner--warning">
-          
-        </aside>
+        
       </div>
     
     
@@ -126,7 +133,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -148,7 +155,7 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -156,13 +163,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -185,7 +192,7 @@
         <a href="https://github.com/microsoft/PSRule" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -316,7 +323,7 @@
       <a href="https://github.com/microsoft/PSRule" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -354,36 +361,39 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
-        <label class="md-nav__link" for="__nav_2">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
           Getting started
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -404,8 +414,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
       
       
         
@@ -417,7 +428,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_1">
+        <label class="md-nav__link" for="__nav_2_1" tabindex="0" aria-expanded="false">
           Overview
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -501,8 +512,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
       
         
@@ -510,7 +522,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_3">
+        <label class="md-nav__link" for="__nav_2_3" tabindex="0" aria-expanded="false">
           Quickstarts
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -552,8 +564,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
       
       
         
@@ -569,7 +582,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_4">
+        <label class="md-nav__link" for="__nav_2_4" tabindex="0" aria-expanded="false">
           Authoring rules
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -667,8 +680,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
       
       
         
@@ -680,7 +694,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_5">
+        <label class="md-nav__link" for="__nav_2_5" tabindex="0" aria-expanded="false">
           Running rules
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -750,8 +764,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
       
       
         
@@ -761,9 +776,11 @@
         
           
         
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_6">
+        <label class="md-nav__link" for="__nav_2_6" tabindex="0" aria-expanded="false">
           Tutorials
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -817,6 +834,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scenarios/containers/container-execution/" class="md-nav__link">
+        Using PSRule from a Container
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -833,16 +864,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
       
       
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_7">
+        <label class="md-nav__link" for="__nav_2_7" tabindex="0" aria-expanded="false">
           Concepts
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -851,6 +887,86 @@
         <label class="md-nav__title" for="__nav_2_7">
           <span class="md-nav__icon md-icon"></span>
           Concepts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expressions/functions/" class="md-nav__link">
+        Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/grouping-rules/" class="md-nav__link">
+        Grouping rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expressions/sub-selectors/" class="md-nav__link">
+        Sub-selectors
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_8" tabindex="0" aria-expanded="false">
+          Scenarios
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Scenarios" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          Scenarios
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -914,8 +1030,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_11" type="checkbox" id="__nav_2_11" checked>
       
       
         
@@ -925,15 +1042,17 @@
         
           
         
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_10">
+        <label class="md-nav__link" for="__nav_2_11" tabindex="0" aria-expanded="true">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_10">
+        <label class="md-nav__title" for="__nav_2_11">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -950,8 +1069,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_11_1" type="checkbox" id="__nav_2_11_1" checked>
       
       
         
@@ -963,13 +1083,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10_1">
+        <label class="md-nav__link" for="__nav_2_11_1" tabindex="0" aria-expanded="true">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_10_1">
+        <label class="md-nav__title" for="__nav_2_11_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -1017,6 +1137,363 @@
         <li class="md-nav__item">
   <a href="#unreleased" class="md-nav__link">
     Unreleased
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270" class="md-nav__link">
+    v2.7.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0126-pre-release" class="md-nav__link">
+    v2.7.0-B0126 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0097-pre-release" class="md-nav__link">
+    v2.7.0-B0097 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0070-pre-release" class="md-nav__link">
+    v2.7.0-B0070 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0049-pre-release" class="md-nav__link">
+    v2.7.0-B0049 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0031-pre-release" class="md-nav__link">
+    v2.7.0-B0031 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0016-pre-release" class="md-nav__link">
+    v2.7.0-B0016 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0006-pre-release" class="md-nav__link">
+    v2.7.0-B0006 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0001-pre-release" class="md-nav__link">
+    v2.7.0-B0001 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v260" class="md-nav__link">
+    v2.6.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v260-b0034-pre-release" class="md-nav__link">
+    v2.6.0-B0034 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v260-b0013-pre-release" class="md-nav__link">
+    v2.6.0-B0013 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v253" class="md-nav__link">
+    v2.5.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v252" class="md-nav__link">
+    v2.5.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v251" class="md-nav__link">
+    v2.5.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250" class="md-nav__link">
+    v2.5.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250-b0080-pre-release" class="md-nav__link">
+    v2.5.0-B0080 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250-b0045-pre-release" class="md-nav__link">
+    v2.5.0-B0045 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250-b0015-pre-release" class="md-nav__link">
+    v2.5.0-B0015 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250-b0004-pre-release" class="md-nav__link">
+    v2.5.0-B0004 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v242" class="md-nav__link">
+    v2.4.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v241" class="md-nav__link">
+    v2.4.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240" class="md-nav__link">
+    v2.4.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0091-pre-release" class="md-nav__link">
+    v2.4.0-B0091 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0063-pre-release" class="md-nav__link">
+    v2.4.0-B0063 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0039-pre-release" class="md-nav__link">
+    v2.4.0-B0039 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0022-pre-release" class="md-nav__link">
+    v2.4.0-B0022 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0009-pre-release" class="md-nav__link">
+    v2.4.0-B0009 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v232" class="md-nav__link">
+    v2.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v231" class="md-nav__link">
+    v2.3.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230" class="md-nav__link">
+    v2.3.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0163-pre-release" class="md-nav__link">
+    v2.3.0-B0163 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0130-pre-release" class="md-nav__link">
+    v2.3.0-B0130 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0100-pre-release" class="md-nav__link">
+    v2.3.0-B0100 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0074-pre-release" class="md-nav__link">
+    v2.3.0-B0074 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0051-pre-release" class="md-nav__link">
+    v2.3.0-B0051 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0030-pre-release" class="md-nav__link">
+    v2.3.0-B0030 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0015-pre-release" class="md-nav__link">
+    v2.3.0-B0015 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0006-pre-release" class="md-nav__link">
+    v2.3.0-B0006 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0001-pre-release" class="md-nav__link">
+    v2.3.0-B0001 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220" class="md-nav__link">
+    v2.2.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0175-pre-release" class="md-nav__link">
+    v2.2.0-B0175 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0131-pre-release" class="md-nav__link">
+    v2.2.0-B0131 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0089-pre-release" class="md-nav__link">
+    v2.2.0-B0089 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0052-pre-release" class="md-nav__link">
+    v2.2.0-B0052 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0021-pre-release" class="md-nav__link">
+    v2.2.0-B0021 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210" class="md-nav__link">
+    v2.1.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210-b0069-pre-release" class="md-nav__link">
+    v2.1.0-B0069 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210-b0040-pre-release" class="md-nav__link">
+    v2.1.0-B0040 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210-b0015-pre-release" class="md-nav__link">
+    v2.1.0-B0015 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v201" class="md-nav__link">
+    v2.0.1
   </a>
   
 </li>
@@ -1212,6 +1689,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../versioning/" class="md-nav__link">
+        Changes and versioning
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1250,40 +1741,41 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
-        <label class="md-nav__link" for="__nav_3">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
           Reference
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1304,34 +1796,35 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
       
-        <label class="md-nav__link" for="__nav_3_1">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" tabindex="0" aria-expanded="false">
           Commands
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1675,8 +2168,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
         
@@ -1684,7 +2178,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
           Addons
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1745,6 +2239,363 @@
         <li class="md-nav__item">
   <a href="#unreleased" class="md-nav__link">
     Unreleased
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270" class="md-nav__link">
+    v2.7.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0126-pre-release" class="md-nav__link">
+    v2.7.0-B0126 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0097-pre-release" class="md-nav__link">
+    v2.7.0-B0097 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0070-pre-release" class="md-nav__link">
+    v2.7.0-B0070 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0049-pre-release" class="md-nav__link">
+    v2.7.0-B0049 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0031-pre-release" class="md-nav__link">
+    v2.7.0-B0031 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0016-pre-release" class="md-nav__link">
+    v2.7.0-B0016 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0006-pre-release" class="md-nav__link">
+    v2.7.0-B0006 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v270-b0001-pre-release" class="md-nav__link">
+    v2.7.0-B0001 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v260" class="md-nav__link">
+    v2.6.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v260-b0034-pre-release" class="md-nav__link">
+    v2.6.0-B0034 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v260-b0013-pre-release" class="md-nav__link">
+    v2.6.0-B0013 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v253" class="md-nav__link">
+    v2.5.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v252" class="md-nav__link">
+    v2.5.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v251" class="md-nav__link">
+    v2.5.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250" class="md-nav__link">
+    v2.5.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250-b0080-pre-release" class="md-nav__link">
+    v2.5.0-B0080 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250-b0045-pre-release" class="md-nav__link">
+    v2.5.0-B0045 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250-b0015-pre-release" class="md-nav__link">
+    v2.5.0-B0015 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v250-b0004-pre-release" class="md-nav__link">
+    v2.5.0-B0004 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v242" class="md-nav__link">
+    v2.4.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v241" class="md-nav__link">
+    v2.4.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240" class="md-nav__link">
+    v2.4.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0091-pre-release" class="md-nav__link">
+    v2.4.0-B0091 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0063-pre-release" class="md-nav__link">
+    v2.4.0-B0063 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0039-pre-release" class="md-nav__link">
+    v2.4.0-B0039 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0022-pre-release" class="md-nav__link">
+    v2.4.0-B0022 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v240-b0009-pre-release" class="md-nav__link">
+    v2.4.0-B0009 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v232" class="md-nav__link">
+    v2.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v231" class="md-nav__link">
+    v2.3.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230" class="md-nav__link">
+    v2.3.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0163-pre-release" class="md-nav__link">
+    v2.3.0-B0163 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0130-pre-release" class="md-nav__link">
+    v2.3.0-B0130 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0100-pre-release" class="md-nav__link">
+    v2.3.0-B0100 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0074-pre-release" class="md-nav__link">
+    v2.3.0-B0074 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0051-pre-release" class="md-nav__link">
+    v2.3.0-B0051 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0030-pre-release" class="md-nav__link">
+    v2.3.0-B0030 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0015-pre-release" class="md-nav__link">
+    v2.3.0-B0015 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0006-pre-release" class="md-nav__link">
+    v2.3.0-B0006 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230-b0001-pre-release" class="md-nav__link">
+    v2.3.0-B0001 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220" class="md-nav__link">
+    v2.2.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0175-pre-release" class="md-nav__link">
+    v2.2.0-B0175 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0131-pre-release" class="md-nav__link">
+    v2.2.0-B0131 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0089-pre-release" class="md-nav__link">
+    v2.2.0-B0089 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0052-pre-release" class="md-nav__link">
+    v2.2.0-B0052 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v220-b0021-pre-release" class="md-nav__link">
+    v2.2.0-B0021 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210" class="md-nav__link">
+    v2.1.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210-b0069-pre-release" class="md-nav__link">
+    v2.1.0-B0069 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210-b0040-pre-release" class="md-nav__link">
+    v2.1.0-B0040 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210-b0015-pre-release" class="md-nav__link">
+    v2.1.0-B0015 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v201" class="md-nav__link">
+    v2.0.1
   </a>
   
 </li>
@@ -1876,13 +2727,15 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-<a href="https://github.com/microsoft/PSRule/blob/main/docs/CHANGELOG-v2.md" title="Edit this page" class="md-content__button md-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-</a>
+  
+                  
+
+  
+  
 
 
 
@@ -1890,11 +2743,1033 @@
 <p>See <a href="https://microsoft.github.io/PSRule/latest/upgrade-notes/">upgrade notes</a> for helpful information when upgrading from previous versions.</p>
 <p><strong>Important notes</strong>:</p>
 <ul>
-<li>YAML resources will require an <code>apiVersion</code> from PSRule v2. <a href="https://github.com/microsoft/PSRule/issues/648">#648</a></li>
-<li>Setting the default module baseline requires a module configuration from PSRule v2. <a href="https://github.com/microsoft/PSRule/issues/809">#809</a></li>
-<li>Resource names have naming restrictions introduced from PSRule v2. <a href="https://github.com/microsoft/PSRule/issues/1012">#1012</a></li>
+<li>
+<p>Several properties of rule and language block elements will be removed from v3.
+  See <a href="https://microsoft.github.io/PSRule/latest/deprecations/#deprecations-for-v3">deprecations</a> for details.</p>
+</li>
+</ul>
+<p><strong>Experimental features</strong>:</p>
+<ul>
+<li>Functions within YAML and JSON expressions can be used to perform manipulation prior to testing a condition.
+  See <a href="../expressions/functions/">functions</a> for more information.</li>
+<li>Sub-selectors within YAML and JSON expressions can be used to filter rules and list properties.
+  See <a href="../expressions/sub-selectors/">sub-selectors</a> for more information.</li>
+<li>
+<p>Processing of changes files only within a pipeline.
+  See <a href="../creating-your-pipeline/#processing-changed-files-only">creating your pipeline</a> for more information.</p>
+</li>
 </ul>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<h2 id="v270">v2.7.0<a class="headerlink" href="#v270" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.6.0:</p>
+<ul>
+<li>New features:<ul>
+<li>Added API version date comparison assertion method and expression by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1356">#1356</a></li>
+<li>Added support for new functions by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1227">#1227</a><ul>
+<li>Added support for <code>trim</code>, <code>replace</code>, <code>split</code>, <code>first</code>, and <code>last</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Added support target scope by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1350">#1350</a></li>
+<li>Added support for <code>hasValue</code> expression with <code>scope</code> by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1382">#1382</a></li>
+<li>Return target object scope as an array by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1383">#1383</a></li>
+<li>Improve support of string comparisons to support an array of strings by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1384">#1384</a></li>
+<li>Added help properties to rules from YAML/ JSON resources by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1386">#1386</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Newtonsoft.Json to v13.0.2.
+  <a href="https://github.com/microsoft/PSRule/pull/1358">#1358</a></li>
+<li>Bump System.Drawing.Common to v7.0.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1332">#1332</a></li>
+<li>Bump Microsoft.NET.Test.Sdk to v17.4.1.
+  <a href="https://github.com/microsoft/PSRule/pull/1389">#1389</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed exception with comments in JSON baselines by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1336">#1336</a></li>
+<li>Fixed handling of constrained language mode with PowerShell 7.3 by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1348">#1348</a></li>
+<li>Fixed exception calling <code>RuleSource</code> value cannot be null by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1343">#1343</a></li>
+<li>Fixed null reference for link property by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1393">#1393</a></li>
+<li>Fixed reason are emitted for pre-condition sub-selectors by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1394">#1394</a></li>
+<li>Fixed CLI failed to load required assemblies by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1361">#1361</a></li>
+<li>Fixed CLI ignores modules specified in <code>Include.Modules</code> by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1362">#1362</a></li>
+<li>Fixed job summary directory creation by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1353">#1353</a></li>
+<li>Fixed same key for ref and name by @BernieWhite
+  <a href="https://github.com/microsoft/PSRule/issues/1354">#1354</a></li>
+<li>Fixed object path fails to iterate JSON object with wildcard selector by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1376">#1376</a></li>
+<li>Fixed rule annotations are not included from YAML/ JSON definition by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1378">#1378</a></li>
+<li>Fixed loop stuck parsing JSON <code>allOf</code> <code>not</code> rule condition by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1370">#1370</a></li>
+<li>Fixed handling of uint64 with <code>LessOrEqual</code> assertion method by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1366">#1366</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v2.7.0-B0126:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v270-b0126-pre-release">v2.7.0-B0126 (pre-release)<a class="headerlink" href="#v270-b0126-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.7.0-B0097:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed null reference for link property by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1393">#1393</a></li>
+<li>Fixed reason are emitted for pre-condition sub-selectors by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1394">#1394</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v270-b0097-pre-release">v2.7.0-B0097 (pre-release)<a class="headerlink" href="#v270-b0097-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.7.0-B0070:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added support for <code>hasValue</code> expression with <code>scope</code> by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1382">#1382</a></li>
+<li>Return target object scope as an array by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1383">#1383</a></li>
+<li>Improve support of string comparisons to support an array of strings by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1384">#1384</a></li>
+<li>Added help properties to rules from YAML/ JSON resources by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1386">#1386</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Newtonsoft.Json to v13.0.2.
+  <a href="https://github.com/microsoft/PSRule/pull/1358">#1358</a></li>
+<li>Bump System.Drawing.Common to v7.0.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1332">#1332</a></li>
+<li>Bump Microsoft.NET.Test.Sdk to v17.4.1.
+  <a href="https://github.com/microsoft/PSRule/pull/1389">#1389</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v270-b0070-pre-release">v2.7.0-B0070 (pre-release)<a class="headerlink" href="#v270-b0070-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.7.0-B0049:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed object path fails to iterate JSON object with wildcard selector by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1376">#1376</a></li>
+<li>Fixed rule annotations are not included from YAML/ JSON definition by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1378">#1378</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v270-b0049-pre-release">v2.7.0-B0049 (pre-release)<a class="headerlink" href="#v270-b0049-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.7.0-B0031:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed loop stuck parsing JSON <code>allOf</code> <code>not</code> rule condition by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1370">#1370</a></li>
+<li>Fixed handling of uint64 with <code>LessOrEqual</code> assertion method by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1366">#1366</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v270-b0031-pre-release">v2.7.0-B0031 (pre-release)<a class="headerlink" href="#v270-b0031-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.7.0-B0016:</p>
+<ul>
+<li>New features:<ul>
+<li>Added API version date comparison assertion method and expression by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1356">#1356</a></li>
+<li>Added support for new functions by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1227">#1227</a><ul>
+<li>Added support for <code>trim</code>, <code>replace</code>, <code>split</code>, <code>first</code>, and <code>last</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed CLI failed to load required assemblies by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1361">#1361</a></li>
+<li>Fixed CLI ignores modules specified in <code>Include.Modules</code> by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1362">#1362</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v270-b0016-pre-release">v2.7.0-B0016 (pre-release)<a class="headerlink" href="#v270-b0016-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.7.0-B0006:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed job summary directory creation by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1353">#1353</a></li>
+<li>Fixed same key for ref and name by @BernieWhite
+  <a href="https://github.com/microsoft/PSRule/issues/1354">#1354</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v270-b0006-pre-release">v2.7.0-B0006 (pre-release)<a class="headerlink" href="#v270-b0006-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.7.0-B0001:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added support target scope by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1350">#1350</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed exception with comments in JSON baselines by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1336">#1336</a></li>
+<li>Fixed handling of constrained language mode with PowerShell 7.3 by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1348">#1348</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v270-b0001-pre-release">v2.7.0-B0001 (pre-release)<a class="headerlink" href="#v270-b0001-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v2.6.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed exception calling <code>RuleSource</code> value cannot be null by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1343">#1343</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v260">v2.6.0<a class="headerlink" href="#v260" title="Permanent link">#</a></h2>
+<p>What's changed since v2.5.3:</p>
+<ul>
+<li>New features:<ul>
+<li>Added support for generating job summaries by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1264">#1264</a><ul>
+<li>Job summaries provide a markdown output for pipelines in addition to other supported output formats.</li>
+<li>To use, configure the <code>Output.JobSummaryPath</code> option.</li>
+</ul>
+</li>
+<li>Added support for time bound suppression groups by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1335">#1335</a><ul>
+<li>Suppression groups can be configured to expire after a specified time by setting the <code>spec.expiresOn</code> property.</li>
+<li>When a suppression group expires, the suppression group will generate a warning by default.</li>
+<li>Configure the <code>Execution.SuppressionGroupExpired</code> option to ignore or error on expired suppression groups.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Microsoft.NET.Test.Sdk to v17.4.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1331">#1331</a></li>
+<li>Bump PSScriptAnalyzer to v1.21.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1318">#1318</a></li>
+<li>Class clean up and documentation by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1186">#1186</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v2.6.0-B0034:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v260-b0034-pre-release">v2.6.0-B0034 (pre-release)<a class="headerlink" href="#v260-b0034-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.6.0-B0013:</p>
+<ul>
+<li>New features:<ul>
+<li>Added support for generating job summaries by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1264">#1264</a><ul>
+<li>Job summaries provide a markdown output for pipelines in addition to other supported output formats.</li>
+<li>To use, configure the <code>Output.JobSummaryPath</code> option.</li>
+</ul>
+</li>
+<li>Added support for time bound suppression groups by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1335">#1335</a><ul>
+<li>Suppression groups can be configured to expire after a specified time by setting the <code>spec.expiresOn</code> property.</li>
+<li>When a suppression group expires, the suppression group will generate a warning by default.</li>
+<li>Configure the <code>Execution.SuppressionGroupExpired</code> option to ignore or error on expired suppression groups.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Microsoft.NET.Test.Sdk to v17.4.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1331">#1331</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v260-b0013-pre-release">v2.6.0-B0013 (pre-release)<a class="headerlink" href="#v260-b0013-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v2.5.3:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Bump Microsoft.NET.Test.Sdk to v17.3.2.
+  <a href="https://github.com/microsoft/PSRule/pull/1283">#1283</a></li>
+<li>Bump PSScriptAnalyzer to v1.21.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1318">#1318</a></li>
+<li>Class clean up and documentation by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1186">#1186</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v253">v2.5.3<a class="headerlink" href="#v253" title="Permanent link">#</a></h2>
+<p>What's changed since v2.5.2:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed incorrect XML header for encoding by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1322">#1322</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v252">v2.5.2<a class="headerlink" href="#v252" title="Permanent link">#</a></h2>
+<p>What's changed since v2.5.1:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed NUnit output does not escape characters in all result properties by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1316">#1316</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v251">v2.5.1<a class="headerlink" href="#v251" title="Permanent link">#</a></h2>
+<p>What's changed since v2.5.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed <code>In</code> with array source object and dot object path by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1314">#1314</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v250">v2.5.0<a class="headerlink" href="#v250" title="Permanent link">#</a></h2>
+<p>What's changed since v2.4.2:</p>
+<ul>
+<li>New features:<ul>
+<li><strong>Experimental</strong>: Added support for only processing changed files by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/688">#688</a><ul>
+<li>To ignore unchanged files, set the <code>Input.IgnoreUnchangedPath</code> option to <code>true</code>.</li>
+<li>See <a href="../creating-your-pipeline/#processing-changed-files-only">creating your pipeline</a> for more information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Added labels metadata from grouping and filtering rules by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1272">#1272</a><ul>
+<li>Labels are metadata that extends on tags to provide a more structured way to group rules.</li>
+<li>Rules can be classified by setting the <code>metadata.labels</code> property or <code>-Labels</code> parameter.</li>
+</ul>
+</li>
+<li>Provide unblock for command line tools by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1261">#1261</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Microsoft.NET.Test.Sdk to v17.3.1.
+  <a href="https://github.com/microsoft/PSRule/pull/1248">#1248</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed could not load Microsoft.Management.Infrastructure by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1249">#1249</a><ul>
+<li>To use minimal initial session state set <code>Execution.InitialSessionState</code> to <code>Minimal</code>.</li>
+</ul>
+</li>
+<li>Fixed unhandled exception with GetRootedPath by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1251">#1251</a></li>
+<li>Fixed Dockerfile case sensitivity by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1269">#1269</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v2.5.0-B0080:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v250-b0080-pre-release">v2.5.0-B0080 (pre-release)<a class="headerlink" href="#v250-b0080-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.5.0-B0045:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed exception with <code>PathExpressionBuilder.GetAllRecurse</code> by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1301">#1301</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v250-b0045-pre-release">v2.5.0-B0045 (pre-release)<a class="headerlink" href="#v250-b0045-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.5.0-B0015:</p>
+<ul>
+<li>New features:<ul>
+<li><strong>Experimental</strong>: Added support for only processing changed files by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/688">#688</a><ul>
+<li>To ignore unchanged files, set the <code>Input.IgnoreUnchangedPath</code> option to <code>true</code>.</li>
+<li>See <a href="../creating-your-pipeline/#processing-changed-files-only">creating your pipeline</a> for more information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Added labels metadata from grouping and filtering rules by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1272">#1272</a><ul>
+<li>Labels are metadata that extends on tags to provide a more structured way to group rules.</li>
+<li>Rules can be classified by setting the <code>metadata.labels</code> property or <code>-Labels</code> parameter.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed Dockerfile case sensitivity by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1269">#1269</a></li>
+<li>Fixed markdown parsing of Spanish translated help fails by @BernieWhite @jonathanruiz.
+  <a href="https://github.com/microsoft/PSRule/issues/1286">#1286</a>
+  <a href="https://github.com/microsoft/PSRule/pull/1285">#1285</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v250-b0015-pre-release">v2.5.0-B0015 (pre-release)<a class="headerlink" href="#v250-b0015-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.5.0-B0004:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Provide unblock for command line tools by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1261">#1261</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v250-b0004-pre-release">v2.5.0-B0004 (pre-release)<a class="headerlink" href="#v250-b0004-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v2.4.0:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Bump Microsoft.NET.Test.Sdk to v17.3.1.
+  <a href="https://github.com/microsoft/PSRule/pull/1248">#1248</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed could not load Microsoft.Management.Infrastructure by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1249">#1249</a><ul>
+<li>To use minimal initial session state set <code>Execution.InitialSessionState</code> to <code>Minimal</code>.</li>
+</ul>
+</li>
+<li>Fixed unhandled exception with GetRootedPath by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1251">#1251</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v242">v2.4.2<a class="headerlink" href="#v242" title="Permanent link">#</a></h2>
+<p>What's changed since v2.4.1:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed exception with <code>PathExpressionBuilder.GetAllRecurse</code> by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1301">#1301</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v241">v2.4.1<a class="headerlink" href="#v241" title="Permanent link">#</a></h2>
+<p>What's changed since v2.4.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed markdown parsing of Spanish translated help fails by @BernieWhite @jonathanruiz.
+  <a href="https://github.com/microsoft/PSRule/issues/1286">#1286</a>
+  <a href="https://github.com/microsoft/PSRule/pull/1285">#1285</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v240">v2.4.0<a class="headerlink" href="#v240" title="Permanent link">#</a></h2>
+<p>What's changed since v2.3.2:</p>
+<ul>
+<li>New features:<ul>
+<li><strong>Experimental</strong>: Added support for functions within YAML and JSON expressions by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1227">#1227</a>
+  <a href="https://github.com/microsoft/PSRule/issues/1016">#1016</a><ul>
+<li>Added conversion functions <code>boolean</code>, <code>string</code>, and <code>integer</code>.</li>
+<li>Added lookup functions <code>configuration</code>, and <code>path</code>.</li>
+<li>Added string functions <code>concat</code>, <code>substring</code>.</li>
+<li>See <a href="../expressions/functions/">functions</a> for more information.</li>
+</ul>
+</li>
+<li><strong>Experimental</strong>: Added support for sub-selector YAML and JSON expressions by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1024">#1024</a>
+  <a href="https://github.com/microsoft/PSRule/issues/1045">#1045</a><ul>
+<li>Sub-selector pre-conditions add an additional expression to determine if a rule is executed.</li>
+<li>Sub-selector object filters provide an way to filter items from list properties.</li>
+<li>See <a href="../expressions/sub-selectors/">sub-selectors</a> for more information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Improvements to PSRule engine API documentation by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1186">#1186</a></li>
+<li>Updates to PSRule engine API by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1152">#1152</a><ul>
+<li>Added tool support for baselines parameter.</li>
+<li>Added module path discovery.</li>
+<li>Added output for verbose and debug messages.</li>
+</ul>
+</li>
+<li>Bump support projects to .NET 6 by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1209">#1209</a></li>
+<li>Bump Microsoft.NET.Test.Sdk to v17.3.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1213">#1213</a></li>
+<li>Bump BenchmarkDotNet to v0.13.2.
+  <a href="https://github.com/microsoft/PSRule/pull/1241">#1241</a></li>
+<li>Bump BenchmarkDotNet.Diagnostics.Windows to v0.13.2.
+  <a href="https://github.com/microsoft/PSRule/pull/1242">#1242</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed reporting of duplicate identifiers which were not generating an error for all cases by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1229">#1229</a><ul>
+<li>Added <code>Execution.DuplicateResourceId</code> option to configure PSRule behaviour.</li>
+<li>By default, duplicate resource identifiers return an error.</li>
+</ul>
+</li>
+<li>Fixed exception on JSON baseline without a synopsis by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1230">#1230</a></li>
+<li>Fixed repository information not in output by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1219">#1219</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v2.4.0-B0091:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v240-b0091-pre-release">v2.4.0-B0091 (pre-release)<a class="headerlink" href="#v240-b0091-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.4.0-B0063:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Bump BenchmarkDotNet to v0.13.2.
+  <a href="https://github.com/microsoft/PSRule/pull/1241">#1241</a></li>
+<li>Bump BenchmarkDotNet.Diagnostics.Windows to v0.13.2.
+  <a href="https://github.com/microsoft/PSRule/pull/1242">#1242</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v240-b0063-pre-release">v2.4.0-B0063 (pre-release)<a class="headerlink" href="#v240-b0063-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.4.0-B0039:</p>
+<ul>
+<li>New features:<ul>
+<li><strong>Experimental</strong>: Added support for sub-selector YAML and JSON expressions by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1024">#1024</a>
+  <a href="https://github.com/microsoft/PSRule/issues/1045">#1045</a><ul>
+<li>Sub-selector pre-conditions add an additional expression to determine if a rule is executed.</li>
+<li>Sub-selector object filters provide an way to filter items from list properties.</li>
+<li>See <a href="../expressions/sub-selectors/">sub-selectors</a> for more information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Improvements to PSRule engine API documentation by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1186">#1186</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v240-b0039-pre-release">v2.4.0-B0039 (pre-release)<a class="headerlink" href="#v240-b0039-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.4.0-B0022:</p>
+<ul>
+<li>New features:<ul>
+<li><strong>Experimental</strong>: Added support for functions within YAML and JSON expressions by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1227">#1227</a>
+  <a href="https://github.com/microsoft/PSRule/issues/1016">#1016</a><ul>
+<li>Added conversion functions <code>boolean</code>, <code>string</code>, and <code>integer</code>.</li>
+<li>Added lookup functions <code>configuration</code>, and <code>path</code>.</li>
+<li>Added string functions <code>concat</code>, <code>substring</code>.</li>
+<li>See <a href="../expressions/functions/">functions</a> for more information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed reporting of duplicate identifiers which were not generating an error for all cases by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1229">#1229</a><ul>
+<li>Added <code>Execution.DuplicateResourceId</code> option to configure PSRule behaviour.</li>
+<li>By default, duplicate resource identifiers return an error.</li>
+</ul>
+</li>
+<li>Fixed exception on JSON baseline without a synopsis by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1230">#1230</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v240-b0022-pre-release">v2.4.0-B0022 (pre-release)<a class="headerlink" href="#v240-b0022-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.4.0-B0009:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Updates to PSRule engine API by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1152">#1152</a><ul>
+<li>Added tool support for baselines parameter.</li>
+<li>Added module path discovery.</li>
+<li>Added output for verbose and debug messages.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v240-b0009-pre-release">v2.4.0-B0009 (pre-release)<a class="headerlink" href="#v240-b0009-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v2.3.2:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Bump support projects to .NET 6 by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1209">#1209</a></li>
+<li>Bump Microsoft.NET.Test.Sdk to v17.3.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1213">#1213</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed repository information not in output by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1219">#1219</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v232">v2.3.2<a class="headerlink" href="#v232" title="Permanent link">#</a></h2>
+<p>What's changed since v2.3.1:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixes lost scope for rules by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1214">#1214</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v231">v2.3.1<a class="headerlink" href="#v231" title="Permanent link">#</a></h2>
+<p>What's changed since v2.3.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed object path join handling of self path identifier by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1204">#1204</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v230">v2.3.0<a class="headerlink" href="#v230" title="Permanent link">#</a></h2>
+<p>What's changed since v2.2.0:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added <code>PathPrefix</code> method to add an object path prefix to assertion reasons by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1198">#1198</a></li>
+<li>Added support for binding with JSON objects by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1182">#1182</a></li>
+<li>Added support for full path from JSON objects by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1174">#1174</a></li>
+<li>Improved reporting of full object path from pre-processed results by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1169">#1169</a></li>
+<li>Added PSRule for Azure expansion configuration to options schema by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1149">#1149</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump xunit to v2.4.2.
+  <a href="https://github.com/microsoft/PSRule/pull/1200">#1200</a></li>
+<li>Expose online link extension method by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1195">#1195</a></li>
+<li>Added comment documentation to .NET classes and interfaces by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1186">#1186</a></li>
+<li>Added publishing support for NuGet symbol packages @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1173">#1173</a></li>
+<li>Updated outcome option docs by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1166">#1166</a></li>
+<li>Bump Sarif.Sdk to v2.4.16.
+  <a href="https://github.com/microsoft/PSRule/pull/1177">#1177</a></li>
+<li>Refactoring and updates to interfaces to allow use outside of PowerShell by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1152">#1152</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixes JSON parsing of string array for single objects by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1193">#1193</a></li>
+<li>Fixed handling for JSON objects in rules by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1187">#1187</a></li>
+<li>Fixed null object reference for object equity comparison by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1157">#1157</a></li>
+<li>Fixed expression evaluation not logging debug output when using the <code>-Debug</code> switch by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1158">#1158</a></li>
+<li>Fixed startIndex cannot be larger than length of string by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1160">#1160</a></li>
+<li>Fixed path within SDK package causes <code>psd1</code> to compile by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1146">#1146</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v2.3.0-B0163:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v230-b0163-pre-release">v2.3.0-B0163 (pre-release)<a class="headerlink" href="#v230-b0163-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.3.0-B0130:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added <code>PathPrefix</code> method to add an object path prefix to assertion reasons by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1198">#1198</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump xunit to v2.4.2.
+  <a href="https://github.com/microsoft/PSRule/pull/1200">#1200</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v230-b0130-pre-release">v2.3.0-B0130 (pre-release)<a class="headerlink" href="#v230-b0130-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.3.0-B0100:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Expose online link extension method by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1195">#1195</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixes JSON parsing of string array for single objects by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1193">#1193</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v230-b0100-pre-release">v2.3.0-B0100 (pre-release)<a class="headerlink" href="#v230-b0100-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.3.0-B0074:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Added comment documentation to .NET classes and interfaces by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1186">#1186</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed handling for JSON objects in rules by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1187">#1187</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v230-b0074-pre-release">v2.3.0-B0074 (pre-release)<a class="headerlink" href="#v230-b0074-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.3.0-B0051:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added support for binding with JSON objects by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1182">#1182</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v230-b0051-pre-release">v2.3.0-B0051 (pre-release)<a class="headerlink" href="#v230-b0051-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.3.0-B0030:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added support for full path from JSON objects by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1174">#1174</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Added publishing support for NuGet symbol packages @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1173">#1173</a></li>
+<li>Updated outcome option docs by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1166">#1166</a></li>
+<li>Bump Sarif.Sdk to v2.4.16.
+  <a href="https://github.com/microsoft/PSRule/pull/1177">#1177</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v230-b0030-pre-release">v2.3.0-B0030 (pre-release)<a class="headerlink" href="#v230-b0030-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.3.0-B0015:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Improved reporting of full object path from pre-processed results by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1169">#1169</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v230-b0015-pre-release">v2.3.0-B0015 (pre-release)<a class="headerlink" href="#v230-b0015-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.3.0-B0006:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed null object reference for object equity comparison by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1157">#1157</a></li>
+<li>Fixed expression evaluation not logging debug output when using the <code>-Debug</code> switch by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1158">#1158</a></li>
+<li>Fixed startIndex cannot be larger than length of string by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1160">#1160</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v230-b0006-pre-release">v2.3.0-B0006 (pre-release)<a class="headerlink" href="#v230-b0006-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.3.0-B0001:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added PSRule for Azure expansion configuration to options schema by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1149">#1149</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Refactoring and updates to interfaces to allow use outside of PowerShell by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1152">#1152</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v230-b0001-pre-release">v2.3.0-B0001 (pre-release)<a class="headerlink" href="#v230-b0001-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v2.2.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed path within SDK package causes <code>psd1</code> to compile by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1146">#1146</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v220">v2.2.0<a class="headerlink" href="#v220" title="Permanent link">#</a></h2>
+<p>What's changed since v2.1.0:</p>
+<ul>
+<li>New features:<ul>
+<li>Added <code>notCount</code> expression and assertion helper by @ArmaanMcleod.
+  <a href="https://github.com/microsoft/PSRule/issues/1091">#1091</a></li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Improved reporting of the object path that caused rule failures by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1092">#1092</a><ul>
+<li>Output include a new <code>Detail</code> property with details of the reason and the object path.</li>
+<li>Custom methods <code>ReasonFrom</code> and <code>ReasonIf</code> accept a <code>path</code> parameter to specify the object path.</li>
+</ul>
+</li>
+<li>Added informational message when output has been written to disk by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1074">#1074</a><ul>
+<li>The <code>Output.Footer</code> option now supports <code>OutputFile</code> which reports the output file path.
+  This is enabled by default.</li>
+</ul>
+</li>
+<li>Added descendant selector to object path syntax by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1133">#1133</a><ul>
+<li>Use <code>..</code> to traverse into child objects, for example <code>$..name</code> finds names for all nested objects.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Newtonsoft.Json to 13.0.1.
+  <a href="https://github.com/microsoft/PSRule/pull/1137">#1137</a></li>
+<li>Added more object path tests by @ArmaanMcleod.
+  <a href="https://github.com/microsoft/PSRule/issues/1110">#1110</a></li>
+<li>Bump xunit.runner.visualstudio to 2.4.5.
+  <a href="https://github.com/microsoft/PSRule/pull/1084">#1084</a></li>
+<li>Bump Pester to 5.3.3.
+  <a href="https://github.com/microsoft/PSRule/pull/1079">#1079</a></li>
+<li>Bump Microsoft.NET.Test.Sdk to 17.2.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1089">#1089</a></li>
+<li>Added NuGet packaging publishing by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1093">#1093</a></li>
+<li>Updated NuGet packaging metadata by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1093">#1093</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed output of reason with wide format by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1117">#1117</a></li>
+<li>Fixed piped input does not respect excluded paths by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1114">#1114</a><ul>
+<li>By default, objects are not excluded by source.</li>
+<li>To exclude piped input based on source configure the <code>Input.IgnoreObjectSource</code> option.</li>
+</ul>
+</li>
+<li>Fixed issue building a PSRule project by removing PSRule.psd1 from compile target by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1140">#1140</a></li>
+<li>Fixed grouping of logical operators in object path by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1101">#1101</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v2.2.0-B0175:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v220-b0175-pre-release">v2.2.0-B0175 (pre-release)<a class="headerlink" href="#v220-b0175-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.2.0-B0131:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed issue building a PSRule project by removing PSRule.psd1 from compile target by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1140">#1140</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v220-b0131-pre-release">v2.2.0-B0131 (pre-release)<a class="headerlink" href="#v220-b0131-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.2.0-B0089:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added descendant selector to object path syntax by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1133">#1133</a><ul>
+<li>Use <code>..</code> to traverse into child objects, for example <code>$..name</code> finds names for all nested objects.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Newtonsoft.Json to 13.0.1.
+  <a href="https://github.com/microsoft/PSRule/pull/1137">#1137</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v220-b0089-pre-release">v2.2.0-B0089 (pre-release)<a class="headerlink" href="#v220-b0089-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.2.0-B0052:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Improved reporting of the object path that caused rule failures by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1092">#1092</a><ul>
+<li>Output include a new <code>Detail</code> property with details of the reason and the object path.</li>
+<li>Custom methods <code>ReasonFrom</code> and <code>ReasonIf</code> accept a <code>path</code> parameter to specify the object path.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v220-b0052-pre-release">v2.2.0-B0052 (pre-release)<a class="headerlink" href="#v220-b0052-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.2.0-B0021:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added informational message when output has been written to disk by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1074">#1074</a><ul>
+<li>The <code>Output.Footer</code> option now supports <code>OutputFile</code> which reports the output file path.
+  This is enabled by default.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Added more object path tests by @ArmaanMcleod.
+  <a href="https://github.com/microsoft/PSRule/issues/1110">#1110</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed output of reason with wide format by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1117">#1117</a></li>
+<li>Fixed piped input does not respect excluded paths by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1114">#1114</a><ul>
+<li>By default, objects are not excluded by source.</li>
+<li>To exclude piped input based on source configure the <code>Input.IgnoreObjectSource</code> option.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v220-b0021-pre-release">v2.2.0-B0021 (pre-release)<a class="headerlink" href="#v220-b0021-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v2.1.0:</p>
+<ul>
+<li>New features:<ul>
+<li>Added <code>notCount</code> expression and assertion helper by @ArmaanMcleod.
+  <a href="https://github.com/microsoft/PSRule/issues/1091">#1091</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump xunit.runner.visualstudio to 2.4.5.
+  <a href="https://github.com/microsoft/PSRule/pull/1084">#1084</a></li>
+<li>Bump Pester to 5.3.3.
+  <a href="https://github.com/microsoft/PSRule/pull/1079">#1079</a></li>
+<li>Bump Microsoft.NET.Test.Sdk to 17.2.0.
+  <a href="https://github.com/microsoft/PSRule/pull/1089">#1089</a></li>
+<li>Added NuGet packaging publishing by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1093">#1093</a></li>
+<li>Updated NuGet packaging metadata by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1093">#1093</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed grouping of logical operators in object path by @BernieWhite.
+  <a href="https://github.com/microsoft/PSRule/issues/1101">#1101</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v210">v2.1.0<a class="headerlink" href="#v210" title="Permanent link">#</a></h2>
+<p>What's changed since v2.0.1:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added <code>notStartsWith</code>, <code>notEndsWith</code>, and <code>notContains</code> expressions and assertion helpers. <a href="https://github.com/microsoft/PSRule/issues/1047">#1047</a></li>
+<li>Added <code>like</code>, <code>notLike</code> expressions and assertion helpers. <a href="https://github.com/microsoft/PSRule/issues/1048">#1048</a></li>
+<li>Added additional repository paths to ignore by default. <a href="https://github.com/microsoft/PSRule/issues/1043">#1043</a></li>
+<li>Added custom suppression message during PSRule runs. <a href="https://github.com/microsoft/PSRule/issues/1046">#1046</a><ul>
+<li>When a rule is suppressed using a suppression group the synopsis is shown in the suppression warning.</li>
+<li>Configure the suppression group synopsis to display a custom message.</li>
+<li>Suppression groups synopsis can be localized using markdown documentation.</li>
+<li>Use markdown to set a culture specific synopsis.</li>
+<li>Custom suppression messages are not supported when suppressing individual rules using <code>ps-rule.yaml</code>.</li>
+<li>See <a href="../concepts/PSRule/en-US/about_PSRule_SuppressionGroups/">about_PSRule_SuppressionGroups</a> for details.</li>
+</ul>
+</li>
+<li>Added source support for string conditions. <a href="https://github.com/microsoft/PSRule/issues/1068">#1068</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Added code signing of module. <a href="https://github.com/microsoft/PSRule/issues/1049">#1049</a></li>
+<li>Added SBOM manifests to module. <a href="https://github.com/microsoft/PSRule/issues/1050">#1050</a></li>
+<li>Bump Sarif.Sdk to 2.4.15. <a href="https://github.com/microsoft/PSRule/pull/1075">#1075</a></li>
+<li>Bump Pester to 5.3.2. <a href="https://github.com/microsoft/PSRule/pull/1062">#1062</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li><strong>Important change:</strong> Fixed source scope not updated in multi-module runs. <a href="https://github.com/microsoft/PSRule/issues/1053">#1053</a><ul>
+<li>Several properties of rule and language block elements have been renamed to improve consistency.</li>
+<li>From <em>v3</em> custom scripts may not work correctly until you update these names.</li>
+<li>For details on the updated property names see <a href="https://microsoft.github.io/PSRule/latest/deprecations/#deprecations-for-v3">deprecations</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v2.1.0-B0069:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v210-b0069-pre-release">v2.1.0-B0069 (pre-release)<a class="headerlink" href="#v210-b0069-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.1.0-B0040:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added <code>notStartsWith</code>, <code>notEndsWith</code>, and <code>notContains</code> expressions and assertion helpers. <a href="https://github.com/microsoft/PSRule/issues/1047">#1047</a></li>
+<li>Added <code>like</code>, <code>notLike</code> expressions and assertion helpers. <a href="https://github.com/microsoft/PSRule/issues/1048">#1048</a></li>
+<li>Added additional repository paths to ignore by default. <a href="https://github.com/microsoft/PSRule/issues/1043">#1043</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Sarif.Sdk to 2.4.15. <a href="https://github.com/microsoft/PSRule/pull/1075">#1075</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v210-b0040-pre-release">v2.1.0-B0040 (pre-release)<a class="headerlink" href="#v210-b0040-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v2.1.0-B0015:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Added custom suppression message during PSRule runs. <a href="https://github.com/microsoft/PSRule/issues/1046">#1046</a><ul>
+<li>When a rule is suppressed using a suppression group the synopsis is shown in the suppression warning.</li>
+<li>Configure the suppression group synopsis to display a custom message.</li>
+<li>Suppression groups synopsis can be localized using markdown documentation.</li>
+<li>Use markdown to set a culture specific synopsis.</li>
+<li>Custom suppression messages are not supported when suppressing individual rules using <code>ps-rule.yaml</code>.</li>
+<li>See <a href="../concepts/PSRule/en-US/about_PSRule_SuppressionGroups/">about_PSRule_SuppressionGroups</a> for details.</li>
+</ul>
+</li>
+<li>Added source support for string conditions. <a href="https://github.com/microsoft/PSRule/issues/1068">#1068</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Sarif.Sdk to 2.4.14. <a href="https://github.com/microsoft/PSRule/pull/1064">#1064</a></li>
+<li>Bump Pester to 5.3.2. <a href="https://github.com/microsoft/PSRule/pull/1062">#1062</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li><strong>Important change:</strong> Fixed source scope not updated in multi-module runs. <a href="https://github.com/microsoft/PSRule/issues/1053">#1053</a><ul>
+<li>Several properties of rule and language block elements have been renamed to improve consistency.</li>
+<li>From <em>v3</em> custom scripts may not work correctly until you update these names.</li>
+<li>For details on the updated property names see <a href="https://microsoft.github.io/PSRule/latest/deprecations/#deprecations-for-v3">deprecations</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v210-b0015-pre-release">v2.1.0-B0015 (pre-release)<a class="headerlink" href="#v210-b0015-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v2.0.1:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Added code signing of module. <a href="https://github.com/microsoft/PSRule/issues/1049">#1049</a></li>
+<li>Added SBOM manifests to module. <a href="https://github.com/microsoft/PSRule/issues/1050">#1050</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v201">v2.0.1<a class="headerlink" href="#v201" title="Permanent link">#</a></h2>
+<p>What's changed since v2.0.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed read JSON failed with comments. <a href="https://github.com/microsoft/PSRule/issues/1051">#1051</a></li>
+<li>Fixed null reference on elapsed time when required module check fails. <a href="https://github.com/microsoft/PSRule/issues/1054">#1054</a></li>
+<li>Fixed failed to read JSON objects with a empty property name. <a href="https://github.com/microsoft/PSRule/issues/1052">#1052</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="v200">v2.0.0<a class="headerlink" href="#v200" title="Permanent link">#</a></h2>
 <p>What's changed since v1.11.1:</p>
 <ul>
@@ -2334,54 +4209,31 @@
   <small>
     
       Last update:
-      2022-03-25
+      2023-01-04
     
   </small>
 </div>
 
-              
-            </article>
-          </div>
+
+
+
+
+                
+
+  
+
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../related-projects/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Related projects" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Related projects
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../CHANGELOG-v1/" class="md-footer__link md-footer__link--next" aria-label="Next: v1" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              v1
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2403,7 +4255,7 @@
       
     
     <a href="https://github.com/microsoft/PSRule/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
 </div>
@@ -2416,10 +4268,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.c44cc438.min.js"></script>
+      <script src="../assets/javascripts/bundle.ba449ae6.min.js"></script>
       
     
   </body>

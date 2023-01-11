@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://microsoft.github.io/PSRule/v2/concepts/PSRule/en-US/about_PSRule_Assert/">
       
+      
+        <link rel="prev" href="../../../../commands/PSRule/en-US/Test-PSRuleTarget/">
+      
+      
+        <link rel="next" href="../about_PSRule_Baseline/">
+      
       <link rel="icon" href="../../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
     
     
       
@@ -23,16 +29,13 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.644de097.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6b71719e.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.e6a45f82.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#000000">
-        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.2505c338.min.css">
       
+      
+
     
     
     
@@ -47,10 +50,11 @@
     
       <link rel="stylesheet" href="../../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
 
@@ -60,10 +64,15 @@
     
   
 
+  <!-- Determine description -->
+  
+  
+
   <!-- The image needs to have an absolute URL -->
   
 
   <!-- Open graph meta tags -->
+  <meta property="og:site_name" content="PSRule" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PSRule - Assertion methods" />
   <meta property="og:description" content="Validate infrastructure as code (IaC) and objects using PowerShell rules." />
@@ -90,7 +99,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
   
     
     
@@ -110,9 +119,7 @@
     </div>
     
       <div data-md-component="outdated" hidden>
-        <aside class="md-banner md-banner--warning">
-          
-        </aside>
+        
       </div>
     
     
@@ -126,7 +133,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -148,7 +155,7 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -156,13 +163,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -185,7 +192,7 @@
         <a href="https://github.com/microsoft/PSRule" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -316,7 +323,7 @@
       <a href="https://github.com/microsoft/PSRule" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -352,36 +359,39 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
-        <label class="md-nav__link" for="__nav_2">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
           Getting started
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -402,8 +412,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
       
       
         
@@ -415,7 +426,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_1">
+        <label class="md-nav__link" for="__nav_2_1" tabindex="0" aria-expanded="false">
           Overview
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -499,8 +510,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
       
         
@@ -508,7 +520,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_3">
+        <label class="md-nav__link" for="__nav_2_3" tabindex="0" aria-expanded="false">
           Quickstarts
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -550,8 +562,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
       
       
         
@@ -567,7 +580,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_4">
+        <label class="md-nav__link" for="__nav_2_4" tabindex="0" aria-expanded="false">
           Authoring rules
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -665,8 +678,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
       
       
         
@@ -678,7 +692,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_5">
+        <label class="md-nav__link" for="__nav_2_5" tabindex="0" aria-expanded="false">
           Running rules
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -748,8 +762,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
       
       
         
@@ -759,9 +774,11 @@
         
           
         
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_6">
+        <label class="md-nav__link" for="__nav_2_6" tabindex="0" aria-expanded="false">
           Tutorials
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -815,6 +832,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../scenarios/containers/container-execution/" class="md-nav__link">
+        Using PSRule from a Container
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -831,16 +862,21 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
       
       
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_7">
+        <label class="md-nav__link" for="__nav_2_7" tabindex="0" aria-expanded="false">
           Concepts
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -849,6 +885,86 @@
         <label class="md-nav__title" for="__nav_2_7">
           <span class="md-nav__icon md-icon"></span>
           Concepts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../expressions/functions/" class="md-nav__link">
+        Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../grouping-rules/" class="md-nav__link">
+        Grouping rules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../expressions/sub-selectors/" class="md-nav__link">
+        Sub-selectors
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_8" tabindex="0" aria-expanded="false">
+          Scenarios
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Scenarios" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          Scenarios
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -910,8 +1026,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_11" type="checkbox" id="__nav_2_11" >
       
       
         
@@ -921,15 +1038,17 @@
         
           
         
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_2_10">
+        <label class="md-nav__link" for="__nav_2_11" tabindex="0" aria-expanded="false">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_10">
+        <label class="md-nav__title" for="__nav_2_11">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -944,8 +1063,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_11_1" type="checkbox" id="__nav_2_11_1" >
       
       
         
@@ -957,13 +1077,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10_1">
+        <label class="md-nav__link" for="__nav_2_11_1" tabindex="0" aria-expanded="false">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_10_1">
+        <label class="md-nav__title" for="__nav_2_11_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -1046,6 +1166,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../versioning/" class="md-nav__link">
+        Changes and versioning
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1086,40 +1220,41 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
-        <label class="md-nav__link" for="__nav_3">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="true">
           Reference
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1140,34 +1275,35 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
       
-        <label class="md-nav__link" for="__nav_3_1">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" tabindex="0" aria-expanded="false">
           Commands
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1388,6 +1524,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#apiversion" class="md-nav__link">
+    APIVersion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#contains" class="md-nav__link">
     Contains
   </a>
@@ -1556,8 +1699,36 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#like" class="md-nav__link">
+    Like
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#match" class="md-nav__link">
     Match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notcontains" class="md-nav__link">
+    NotContains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notcount" class="md-nav__link">
+    NotCount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notendswith" class="md-nav__link">
+    NotEndsWith
   </a>
   
 </li>
@@ -1577,6 +1748,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#notlike" class="md-nav__link">
+    NotLike
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#notmatch" class="md-nav__link">
     NotMatch
   </a>
@@ -1586,6 +1764,13 @@
           <li class="md-nav__item">
   <a href="#notnull" class="md-nav__link">
     NotNull
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notstartswith" class="md-nav__link">
+    NotStartsWith
   </a>
   
 </li>
@@ -1873,8 +2058,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
         
@@ -1882,7 +2068,7 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
           Addons
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -1958,6 +2144,13 @@
           <li class="md-nav__item">
   <a href="#field-names" class="md-nav__link">
     Field names
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apiversion" class="md-nav__link">
+    APIVersion
   </a>
   
 </li>
@@ -2131,8 +2324,36 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#like" class="md-nav__link">
+    Like
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#match" class="md-nav__link">
     Match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notcontains" class="md-nav__link">
+    NotContains
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notcount" class="md-nav__link">
+    NotCount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notendswith" class="md-nav__link">
+    NotEndsWith
   </a>
   
 </li>
@@ -2152,6 +2373,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#notlike" class="md-nav__link">
+    NotLike
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#notmatch" class="md-nav__link">
     NotMatch
   </a>
@@ -2161,6 +2389,13 @@
           <li class="md-nav__item">
   <a href="#notnull" class="md-nav__link">
     NotNull
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notstartswith" class="md-nav__link">
+    NotStartsWith
   </a>
   
 </li>
@@ -2276,13 +2511,15 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-<a href="https://github.com/microsoft/PSRule/blob/main/docs/concepts/PSRule/en-US/about_PSRule_Assert.md" title="Edit this page" class="md-content__button md-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-</a>
+  
+                  
+
+  
+  
 
 
 
@@ -2294,6 +2531,7 @@ The <code>$Assert</code> object provides a consistent set of methods to evaluate
 <p>Each <code>$Assert</code> method returns an <code>AssertResult</code> object that contains the result of the assertion.</p>
 <p>The following built-in assertion methods are provided:</p>
 <ul>
+<li><a href="#apiversion">APIVersion</a> - The field value must be a date version string.</li>
 <li><a href="#contains">Contains</a> - The field value must contain at least one of the strings.</li>
 <li><a href="#count">Count</a> - The field value must contain the specified number of items.</li>
 <li><a href="#endswith">EndsWith</a> - The field value must match at least one suffix.</li>
@@ -2318,11 +2556,17 @@ The <code>$Assert</code> object provides a consistent set of methods to evaluate
 <li><a href="#jsonschema">JsonSchema</a> - The object must validate successfully against a JSON schema.</li>
 <li><a href="#less">Less</a> - The field value must be less.</li>
 <li><a href="#lessorequal">LessOrEqual</a> - The field value must be less or equal to.</li>
+<li><a href="#like">Like</a> - The value must match any of the specified wildcard values.</li>
 <li><a href="#match">Match</a> - The field value matches a regular expression pattern.</li>
+<li><a href="#notcontains">NotContains</a> - The value must not contain any of the specified strings.</li>
+<li><a href="#notcount">NotCount</a> - The field value must not contain the specified number of items.</li>
+<li><a href="#notendswith">NotEndsWith</a> - The value must not end with any of the specified strings.</li>
 <li><a href="#nothasfield">NotHasField</a> - The object must not have any of the specified fields.</li>
 <li><a href="#notin">NotIn</a> - The field value must not be included in the set.</li>
+<li><a href="#notlike">NotLike</a> - The value must not match any of the specified wildcard values.</li>
 <li><a href="#notmatch">NotMatch</a> - The field value does not match a regular expression pattern.</li>
 <li><a href="#notnull">NotNull</a> - The field value must not be null.</li>
+<li><a href="#notstartswith">NotStartsWith</a> - The value must not start with any of the specified strings.</li>
 <li><a href="#notwithinpath">NotWithinPath</a> - The field must not be within the specified path.</li>
 <li><a href="#null">Null</a> - The field value must not exist or be null.</li>
 <li><a href="#nullorempty">NullOrEmpty</a> - The object must not have the specified field or it must be empty.</li>
@@ -2396,8 +2640,96 @@ The syntax for an object path is inspired by JSONPath which is current an IETF I
   However member names can not start or end with a dash.
   i.e. <code>Properties.dashed-name</code> and <code>Properties.'-dashed-name'</code> are valid.</li>
 </ul>
+<h3 id="apiversion">APIVersion<a class="headerlink" href="#apiversion" title="Permanent link">#</a></h3>
+<p>The <code>APIVersion</code> assertion method checks the field value is a valid date version.
+A constraint can optionally be provided to require the date version to be within a range.</p>
+<p>A date version uses the format <code>yyyy-MM-dd</code> (<code>2015-10-01</code>).
+Additionally an optional string prerelease identifier can be used <code>yyyy-MM-dd-prerelease</code> (<code>2015-10-01-preview.1</code>).</p>
+<p>The following parameters are accepted:</p>
+<ul>
+<li><code>inputObject</code> - The object being checked for the specified field.</li>
+<li><code>field</code> - The name of the field to check.
+  This is a case insensitive compare.</li>
+<li><code>constraint</code> (optional) - A version constraint, see below for details of version constrain format.</li>
+<li><code>includePrerelease</code> (optional) - Determines if prerelease versions are included.
+  Unless specified this defaults to <code>$False</code>.</li>
+</ul>
+<p>The following are supported constraints:</p>
+<ul>
+<li><code>version</code> - Must match version exactly. This also accepts the prefix <code>=</code>.<ul>
+<li>e.g. <code>2015-10-01</code>, <code>=2015-10-01</code></li>
+</ul>
+</li>
+<li><code>&gt;version</code> - Must be greater than version.<ul>
+<li>e.g. <code>&gt;2015-10-01</code></li>
+</ul>
+</li>
+<li><code>&gt;=version</code> - Must be greater than or equal to version.<ul>
+<li>e.g. <code>&gt;=2015-10-01</code></li>
+</ul>
+</li>
+<li><code>&lt;version</code> - Must be less than version.<ul>
+<li>e.g. <code>&lt;2022-03-01</code></li>
+</ul>
+</li>
+<li><code>&lt;=version</code> - Must be less than or equal to version.<ul>
+<li>e.g. <code>&lt;=2022-03-01</code></li>
+</ul>
+</li>
+</ul>
+<p>An empty, null or <code>*</code> constraint matches all valid date versions.</p>
+<p>Multiple constraints can be joined together:</p>
+<ul>
+<li>Use a <em>space</em> to separate multiple constraints, each must be true (<em>logical AND</em>).</li>
+<li>Separates constraint sets with the double pipe <code>||</code>.
+  Only one constraint set must be true (<em>logical OR</em>).</li>
+</ul>
+<p>By example:</p>
+<ul>
+<li><code>2014-01-01 || &gt;=2015-10-01 &lt;2022-03-01</code> results in:<ul>
+<li>Pass: <code>2014-01-01</code>, <code>2015-10-01</code>, <code>2019-06-30</code>, <code>2022-02-01</code>.</li>
+<li>Fail: <code>2015-01-01</code>, <code>2022-09-01</code>.</li>
+</ul>
+</li>
+</ul>
+<p>Handling for prerelease versions:</p>
+<ul>
+<li>Constraints and versions containing prerelease identifiers are supported.
+  i.e. <code>&gt;=2015-10-01-preview</code> or <code>2015-10-01-preview</code>.</li>
+<li>A version containing a prerelease identifer follows similar ordering to semantic versioning.
+  i.e. <code>2015-10-01-preview</code> &lt; <code>2015-10-01-preview.1</code> &lt; <code>2015-10-01</code> &lt; <code>2022-03-01-preview</code> &lt; <code>2022-03-01</code>.</li>
+<li>A constraint without a prerelease identifer will only match a stable version by default.
+  Set <code>includePrerelease</code> to <code>$True</code> to include prerelease versions.
+  Alternatively use the <code>@pre</code> or <code>@prerelease</code> flag in a constraint.</li>
+</ul>
+<p>Reasons include:</p>
+<ul>
+<li><em>The parameter 'inputObject' is null.</em></li>
+<li><em>The parameter 'field' is null or empty.</em></li>
+<li><em>The field '{0}' does not exist.</em></li>
+<li><em>The field value '{0}' is not a version string.</em></li>
+<li><em>The version '{0}' does not match the constraint '{1}'.</em></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;ValidAPIVersion&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">APIVersion</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;apiVersion&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">Rule</span> <span class="s1">&#39;MinimumAPIVersion&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">APIVersion</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;apiVersion&#39;</span><span class="p">,</span> <span class="s1">&#39;&gt;=2015-10-01&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">Rule</span> <span class="s1">&#39;MinimumAPIVersionWithPrerelease&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">APIVersion</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;apiVersion&#39;</span><span class="p">,</span> <span class="s1">&#39;&gt;=2015-10-01-0&#39;</span><span class="p">,</span> <span class="nv">$True</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">Rule</span> <span class="s1">&#39;MinimumAPIVersionWithFlag&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">APIVersion</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;apiVersion&#39;</span><span class="p">,</span> <span class="s1">&#39;@pre &gt;=2015-10-01-0&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
 <h3 id="contains">Contains<a class="headerlink" href="#contains" title="Permanent link">#</a></h3>
-<p>The <code>Contains</code> assertion method checks the field value contains the specified string.
+<p>The <code>Contains</code> assertion method checks the operand contains the specified string.
+If the operand is an array of strings, only one string must contain the specified string.
 Optionally a case-sensitive compare can be used, however case is ignored by default.</p>
 <p>The following parameters are accepted:</p>
 <ul>
@@ -2448,7 +2780,8 @@ The field value must be an array or collection.</p>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="endswith">EndsWith<a class="headerlink" href="#endswith" title="Permanent link">#</a></h3>
-<p>The <code>EndsWith</code> assertion method checks the field value ends with the specified suffix.
+<p>The <code>EndsWith</code> assertion method checks the operand ends with the specified suffix.
+If the operand is an array of strings, only one string must end with the specified suffix.
 Optionally a case-sensitive compare can be used, however case is ignored by default.</p>
 <p>The following parameters are accepted:</p>
 <ul>
@@ -2653,7 +2986,7 @@ If more than one field is specified, only one must exist.</li>
 <ul>
 <li><em>The parameter 'inputObject' is null.</em></li>
 <li><em>The parameter 'field' is null or empty.</em></li>
-<li><em>The field '{0}' does not exist.</em></li>
+<li><em>Does not exist.</em></li>
 </ul>
 <p>Examples:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;HasField&#39;</span> <span class="p">{</span>
@@ -2706,9 +3039,9 @@ If <code>expectedValue</code> is <code>$Null</code> the field value will not be 
 <ul>
 <li><em>The parameter 'inputObject' is null.</em></li>
 <li><em>The parameter 'field' is null or empty.</em></li>
-<li><em>The field '{0}' does not exist.</em></li>
-<li><em>The value of '{0}' is null or empty.</em></li>
-<li><em>The field '{0}' is set to '{1}'.</em></li>
+<li><em>Does not exist.</em></li>
+<li><em>Is null or empty.</em></li>
+<li><em>Is set to '{0}'.</em></li>
 </ul>
 <p>Examples:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;HasFieldValue&#39;</span> <span class="p">{</span>
@@ -2830,7 +3163,7 @@ By default strings are not converted.</li>
 <li><em>The parameter 'field' is null or empty.</em></li>
 <li><em>The field '{0}' does not exist.</em></li>
 <li><em>The field value '{0}' is null.</em></li>
-<li><em>The field value '{1}' of type {0} is not [bool].</em></li>
+<li><em>The value '{0}' is not a boolean.</em></li>
 </ul>
 <p>Examples:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;IsBoolean&#39;</span> <span class="p">{</span>
@@ -2857,7 +3190,7 @@ By default strings are not converted.</li>
 <li><em>The parameter 'field' is null or empty.</em></li>
 <li><em>The field '{0}' does not exist.</em></li>
 <li><em>The field value '{0}' is null.</em></li>
-<li><em>The field value '{1}' of type {0} is not [DateTime].</em></li>
+<li><em>The value '{0}' is not a date.</em></li>
 </ul>
 <p>Examples:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;IsDateTime&#39;</span> <span class="p">{</span>
@@ -2885,7 +3218,7 @@ By default strings are not converted.</li>
 <li><em>The parameter 'field' is null or empty.</em></li>
 <li><em>The field '{0}' does not exist.</em></li>
 <li><em>The field value '{0}' is null.</em></li>
-<li><em>The field value '{1}' of type {0} is not an integer.</em></li>
+<li><em>The value '{0}' is not an integer.</em></li>
 </ul>
 <p>Examples:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;IsInteger&#39;</span> <span class="p">{</span>
@@ -2941,7 +3274,7 @@ By default strings are not converted.</li>
 <li><em>The parameter 'field' is null or empty.</em></li>
 <li><em>The field '{0}' does not exist.</em></li>
 <li><em>The field value '{0}' is null.</em></li>
-<li><em>The field value '{1}' of type {0} is not numeric.</em></li>
+<li><em>The value '{0}' is not numeric.</em></li>
 </ul>
 <p>Examples:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;IsNumeric&#39;</span> <span class="p">{</span>
@@ -2966,7 +3299,7 @@ This is a case insensitive compare.</li>
 <li><em>The parameter 'field' is null or empty.</em></li>
 <li><em>The field '{0}' does not exist.</em></li>
 <li><em>The field value '{0}' is null.</em></li>
-<li><em>The field value '{1}' of type {0} is not [string].</em></li>
+<li><em>The value '{0}' is not a string.</em></li>
 </ul>
 <p>Examples:</p>
 <div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;IsString&#39;</span> <span class="p">{</span>
@@ -3064,6 +3397,35 @@ By default the string length is compared.</li>
     <span class="nv">$Assert</span><span class="p">.</span><span class="n">LessOrEqual</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">3</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
+<h3 id="like">Like<a class="headerlink" href="#like" title="Permanent link">#</a></h3>
+<p>The <code>Like</code> assertion method checks the field value matches a specified pattern.
+Optionally a case-sensitive compare can be used, however case is ignored by default.</p>
+<p>The following parameters are accepted:</p>
+<ul>
+<li><code>inputObject</code> - The object being checked for the specified field.</li>
+<li><code>field</code> - The name of the field to check.
+This is a case insensitive compare.</li>
+<li><code>pattern</code> - A pattern or an array of patterns to compare the field value with.
+Only one pattern must match.
+When an empty array of patterns is specified, <code>Like</code> always passes.</li>
+<li><code>caseSensitive</code> (optional) - Use a case sensitive compare of the field value.
+Case is ignored by default.</li>
+</ul>
+<p>Reasons include:</p>
+<ul>
+<li><em>The parameter 'inputObject' is null.</em></li>
+<li><em>The parameter 'field' is null or empty.</em></li>
+<li><em>The parameter 'prefix' is null.</em></li>
+<li><em>The field '{0}' does not exist.</em></li>
+<li><em>The field value '{0}' is not a string.</em></li>
+<li><em>The value '{0}' is not like '{1}'.</em></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;Like&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">Like</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;ResourceGroupName&#39;</span><span class="p">,</span> <span class="s1">&#39;rg-*&#39;</span><span class="p">)</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">Like</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="p">@(</span><span class="s1">&#39;st*&#39;</span><span class="p">,</span> <span class="s1">&#39;diag*&#39;</span><span class="p">),</span> <span class="nv">$True</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
 <h3 id="match">Match<a class="headerlink" href="#match" title="Permanent link">#</a></h3>
 <p>The <code>Match</code> assertion method checks the field value matches a regular expression pattern.</p>
 <p>The following parameters are accepted:</p>
@@ -3086,6 +3448,86 @@ Case is ignored by default.</li>
 <div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;Match&#39;</span> <span class="p">{</span>
     <span class="nv">$Assert</span><span class="p">.</span><span class="n">Match</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="s1">&#39;^[a-z]*$&#39;</span><span class="p">)</span>
     <span class="nv">$Assert</span><span class="p">.</span><span class="n">Match</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="s1">&#39;^[a-z]*$&#39;</span><span class="p">,</span> <span class="nv">$True</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="notcontains">NotContains<a class="headerlink" href="#notcontains" title="Permanent link">#</a></h3>
+<p>The <code>NotContains</code> assertion method checks the operand contains the specified string.
+This condition fails when any of the specified sub-strings are found.
+If the operand is an array of strings, this condition fails if any of the strings contain the specified string.
+Optionally a case-sensitive compare can be used, however case is ignored by default.</p>
+<p>The following parameters are accepted:</p>
+<ul>
+<li><code>inputObject</code> - The object being checked for the specified field.</li>
+<li><code>field</code> - The name of the field to check.
+This is a case insensitive compare.</li>
+<li><code>text</code> - A string or an array of strings to compare the field value with.
+When an empty array of strings is specified or text is an empty string, <code>NotContains</code> always passes.</li>
+<li><code>caseSensitive</code> (optional) - Use a case sensitive compare of the field value.
+Case is ignored by default.</li>
+</ul>
+<p>Reasons include:</p>
+<ul>
+<li><em>The parameter 'inputObject' is null.</em></li>
+<li><em>The parameter 'field' is null or empty.</em></li>
+<li><em>The parameter 'text' is null.</em></li>
+<li><em>The field '{0}' does not exist.</em></li>
+<li><em>The value '{0}' contains '{1}'.</em></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;NotContains&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotContains</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;ResourceGroupName&#39;</span><span class="p">,</span> <span class="s1">&#39;prod&#39;</span><span class="p">)</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotContains</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="p">@(</span><span class="s1">&#39;prod&#39;</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">),</span> <span class="nv">$True</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="notcount">NotCount<a class="headerlink" href="#notcount" title="Permanent link">#</a></h3>
+<p>The <code>NotCount</code> assertion method checks the field value does not contain the specified number of items.
+The field value must be an array or collection.</p>
+<p>The following parameters are accepted:</p>
+<ul>
+<li><code>inputObject</code> - The object being checked for the specified field.</li>
+<li><code>field</code> - The name of the field to check. This is a case insensitive compare.</li>
+<li><code>count</code> - The number of items that the field value must contain.</li>
+</ul>
+<p>Reasons include:</p>
+<ul>
+<li><em>The parameter 'inputObject' is null.</em></li>
+<li><em>The parameter 'field' is null or empty.</em></li>
+<li><em>The field '{0}' does not exist.</em></li>
+<li><em>The field '{0}' is not enumerable.</em></li>
+<li><em>The field '{0}' has '{1}' items instead of '{2}'.</em></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;NotCount&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotCount</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;items&#39;</span><span class="p">,</span> <span class="n">2</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="notendswith">NotEndsWith<a class="headerlink" href="#notendswith" title="Permanent link">#</a></h3>
+<p>The <code>NotEndsWith</code> assertion method checks the operand ends with the specified suffix.
+This condition fails when any of the specified sub-strings are found at the end of the operand.
+If the operand is an array of strings, this condition fails if any of the strings ends with the specified suffix.
+Optionally a case-sensitive compare can be used, however case is ignored by default.</p>
+<p>The following parameters are accepted:</p>
+<ul>
+<li><code>inputObject</code> - The object being checked for the specified field.</li>
+<li><code>field</code> - The name of the field to check.
+This is a case insensitive compare.</li>
+<li><code>suffix</code> - A suffix or an array of suffixes to compare the field value with.
+When an empty array of suffixes is specified or suffix is an empty string, <code>NotEndsWith</code> always passes.</li>
+<li><code>caseSensitive</code> (optional) - Use a case sensitive compare of the field value.
+Case is ignored by default.</li>
+</ul>
+<p>Reasons include:</p>
+<ul>
+<li><em>The parameter 'inputObject' is null.</em></li>
+<li><em>The parameter 'field' is null or empty.</em></li>
+<li><em>The parameter 'suffix' is null.</em></li>
+<li><em>The field '{0}' does not exist.</em></li>
+<li><em>The value '{0}' ends with '{1}'.</em></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;NotEndsWith&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotEndsWith</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;ResourceGroupName&#39;</span><span class="p">,</span> <span class="s1">&#39;eus&#39;</span><span class="p">)</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotEndsWith</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="p">@(</span><span class="s1">&#39;db&#39;</span><span class="p">,</span> <span class="s1">&#39;web&#39;</span><span class="p">),</span> <span class="nv">$True</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="nothasfield">NotHasField<a class="headerlink" href="#nothasfield" title="Permanent link">#</a></h3>
@@ -3139,6 +3581,34 @@ Case is ignored by default.</li>
     <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotIn</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;Sku.tier&#39;</span><span class="p">,</span> <span class="p">@(</span><span class="s1">&#39;Free&#39;</span><span class="p">,</span> <span class="s1">&#39;Shared&#39;</span><span class="p">,</span> <span class="s1">&#39;Basic&#39;</span><span class="p">),</span> <span class="nv">$True</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
+<h3 id="notlike">NotLike<a class="headerlink" href="#notlike" title="Permanent link">#</a></h3>
+<p>The <code>NotLike</code> assertion method checks the field value matches a specified pattern.
+This condition fails when any of the specified patterns match the field value.
+Optionally a case-sensitive compare can be used, however case is ignored by default.</p>
+<p>The following parameters are accepted:</p>
+<ul>
+<li><code>inputObject</code> - The object being checked for the specified field.</li>
+<li><code>field</code> - The name of the field to check.
+This is a case insensitive compare.</li>
+<li><code>pattern</code> - A pattern or an array of patterns to compare the field value with.
+When an empty array of pattens is specified, <code>NotLike</code> always passes.</li>
+<li><code>caseSensitive</code> (optional) - Use a case sensitive compare of the field value.
+Case is ignored by default.</li>
+</ul>
+<p>Reasons include:</p>
+<ul>
+<li><em>The parameter 'inputObject' is null.</em></li>
+<li><em>The parameter 'field' is null or empty.</em></li>
+<li><em>The parameter 'prefix' is null.</em></li>
+<li><em>The field '{0}' does not exist.</em></li>
+<li><em>The value '{0}' is like '{1}'</em></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;NotLike&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotLike</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;ResourceGroupName&#39;</span><span class="p">,</span> <span class="s1">&#39;rg-*&#39;</span><span class="p">)</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotLike</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="p">@(</span><span class="s1">&#39;st*&#39;</span><span class="p">,</span> <span class="s1">&#39;diag*&#39;</span><span class="p">),</span> <span class="nv">$True</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
 <h3 id="notmatch">NotMatch<a class="headerlink" href="#notmatch" title="Permanent link">#</a></h3>
 <p>The <code>NotMatch</code> assertion method checks the field value does not match a regular expression pattern.
 If the field does not exist at all, it does not match and passes.
@@ -3183,6 +3653,35 @@ This is a case insensitive compare.</li>
 <div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;NotNull&#39;</span> <span class="p">{</span>
     <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotNull</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">)</span>
     <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotNull</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;tag.Environment&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="notstartswith">NotStartsWith<a class="headerlink" href="#notstartswith" title="Permanent link">#</a></h3>
+<p>The <code>NotStartsWith</code> assertion method checks the operand starts with the specified prefix.
+This condition fails when any of the specified sub-strings are found at the start of the operand.
+If the operand is an array of strings, this condition fails if any of the strings start with the specified prefix.
+Optionally a case-sensitive compare can be used, however case is ignored by default.</p>
+<p>The following parameters are accepted:</p>
+<ul>
+<li><code>inputObject</code> - The object being checked for the specified field.</li>
+<li><code>field</code> - The name of the field to check.
+This is a case insensitive compare.</li>
+<li><code>prefix</code> - A prefix or an array of prefixes to compare the field value with.
+When an empty array of prefixes is specified or prefix is an empty string, <code>NotStartsWith</code> always passes.</li>
+<li><code>caseSensitive</code> (optional) - Use a case sensitive compare of the field value.
+Case is ignored by default.</li>
+</ul>
+<p>Reasons include:</p>
+<ul>
+<li><em>The parameter 'inputObject' is null.</em></li>
+<li><em>The parameter 'field' is null or empty.</em></li>
+<li><em>The parameter 'prefix' is null.</em></li>
+<li><em>The field '{0}' does not exist.</em></li>
+<li><em>The value '{0}' starts with '{1}'.</em></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;NotStartsWith&#39;</span> <span class="p">{</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotStartsWith</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;ResourceGroupName&#39;</span><span class="p">,</span> <span class="s1">&#39;rg-&#39;</span><span class="p">)</span>
+    <span class="nv">$Assert</span><span class="p">.</span><span class="n">NotStartsWith</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="p">@(</span><span class="s1">&#39;st&#39;</span><span class="p">,</span> <span class="s1">&#39;diag&#39;</span><span class="p">),</span> <span class="nv">$True</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="notwithinpath">NotWithinPath<a class="headerlink" href="#notwithinpath" title="Permanent link">#</a></h3>
@@ -3322,7 +3821,8 @@ Specified values can be included in the field value in any order.</p>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="startswith">StartsWith<a class="headerlink" href="#startswith" title="Permanent link">#</a></h3>
-<p>The <code>StartsWith</code> assertion method checks the field value starts with the specified prefix.
+<p>The <code>StartsWith</code> assertion method checks the operand starts with the specified prefix.
+If the operand is an array of strings, only one string must start with the specified prefix.
 Optionally a case-sensitive compare can be used, however case is ignored by default.</p>
 <p>The following parameters are accepted:</p>
 <ul>
@@ -3562,8 +4062,17 @@ When not set or <code>$Null</code>, the case-sensitivity rules of the working pa
 <li><code>Reason(&lt;string&gt; text, params &lt;object[]&gt; args)</code> - Replaces the reason on the results with a formatted string.
   This method can be chained.
   For usage see examples below.</li>
+<li><code>ReasonFrom(&lt;string&gt; path, &lt;string&gt; text, params &lt;object[]&gt; args)</code> - Replaces the reason on the results with a formatted string.
+  Path specifies the object path that affected the reason.
+  This method can be chained.
+  For usage see examples below.</li>
 <li><code>ReasonIf(&lt;bool&gt; condition, &lt;string&gt; text, params &lt;object[]&gt; args)</code> - Replaces the reason if the condition is true.
   This method can be chained, similar to <code>Reason</code>.</li>
+<li><code>ReasonIf(&lt;string&gt; path, &lt;bool&gt; condition, &lt;string&gt; text, params &lt;object[]&gt; args)</code> - Replaces the reason if the condition is true.
+  This method can be chained, similar to <code>ReasonFrom</code>.</li>
+<li><code>PathPrefix(&lt;string&gt; path)</code> - Adds a path prefix to any reasons.
+  This method can be chained.
+  For usage see examples below.</li>
 <li><code>GetReason()</code> - Gets any reasons currently associated with the failed result.</li>
 <li><code>Complete()</code> - Returns <code>$True</code> (Pass) or <code>$False</code> (Fail) to the rule record.
   If the assertion failed, any reasons are automatically added to the rule record.
@@ -3592,6 +4101,14 @@ The reason text is automatically formatted with any parameters provided.</p>
     <span class="nv">$Assert</span><span class="p">.</span>
         <span class="n">HasDefaultValue</span><span class="p">(</span><span class="nv">$TargetObject</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">).</span>
         <span class="n">Reason</span><span class="p">(</span><span class="nv">$LocalizedData</span><span class="p">.</span><span class="n">NonDefaultValue</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="nv">$TargetObject</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>In this example, the built-in reason has a path prefix added to any reasons.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Rule</span> <span class="s1">&#39;Assert.ChildHasFieldValue&#39;</span> <span class="p">{</span>
+    <span class="nv">$items</span> <span class="p">=</span> <span class="p">@(</span><span class="nv">$TargetObject</span><span class="p">.</span><span class="n">items</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="p">=</span> <span class="n">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">-lt</span> <span class="nv">$items</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="nv">$i</span><span class="p">++)</span> <span class="p">{</span>
+        <span class="nv">$Assert</span><span class="p">.</span><span class="n">HasFieldValue</span><span class="p">(</span><span class="nv">$items</span><span class="p">[</span><span class="nv">$i</span><span class="p">],</span> <span class="s1">&#39;Name&#39;</span><span class="p">).</span><span class="n">PathPrefix</span><span class="p">(</span><span class="s2">&quot;items[$i]&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="downstream-issues">Downstream issues<a class="headerlink" href="#downstream-issues" title="Permanent link">#</a></h3>
@@ -3666,54 +4183,85 @@ If a <code>_PSRule</code> property exists with <code>issue</code> sub-property P
   <small>
     
       Last update:
-      2022-03-07
+      2022-12-19
     
   </small>
 </div>
 
-              
-            </article>
-          </div>
+
+
+
+
+                
+
+  
+
+
+  <!-- Giscus -->
+  <h2 id="__comments">Comments</h2>
+  
+
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="microsoft/PSRule"
+      data-repo-id="MMDEwOlJlcG9zaXRvcnkxMjU4MzI1NTY="
+      data-category="Documentation"
+      data-category-id="DIC_kwDOB4ANbM4CRxSO"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+    </script>
+  
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../../../../commands/PSRule/en-US/Test-PSRuleTarget/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Test-PSRuleTarget" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Test-PSRuleTarget
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../about_PSRule_Baseline/" class="md-footer__link md-footer__link--next" aria-label="Next: Baselines" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Baselines
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3735,7 +4283,7 @@ If a <code>_PSRule</code> property exists with <code>issue</code> sub-property P
       
     
     <a href="https://github.com/microsoft/PSRule/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
 </div>
@@ -3748,10 +4296,11 @@ If a <code>_PSRule</code> property exists with <code>issue</code> sub-property P
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.ba449ae6.min.js"></script>
       
     
   </body>
